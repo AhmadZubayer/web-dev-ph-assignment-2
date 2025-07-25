@@ -427,6 +427,97 @@ footer {
         padding-right: 28.5px;
     }
 
+   .upperNav li:not(:last-child) {
+    display: none;
+}
+
+    /*banner--------------*/
+    .banner {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        /*border: 1px solid black;*/
+        margin-bottom: 110px;
+    }
+    .banner img{ 
+        width: 100%;
+        height: 245px;
+        margin-bottom: 0px;
+    }
+
+    .bannerTitle {
+        font-size: 24px;
+        font-weight: 700;  
+    }
+
+    .bannerPara {
+        margin-top: 13px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .banner img {
+        margin: 0;
+    }
+
+    /*Our Plants-------------------------------------------------------------------- */
+    .ourPlants {
+        margin-bottom: 110px;
+        width: 95%;
+    }
+
+    .ourPlantsTexts {
+        text-align: center;
+    }
+
+
+    .plantCardConatainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+    }
+
+    .plantCard {
+        display: flex;
+        width: 171px;
+        height: 341px;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 auto;
+        /*border: 2px solid black;*/
+    }
+
+    .plantCard img {
+        width: 171px;
+        height: 196.5px;
+    }
+
+    .plantName {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px;
+    }
+
+    .plantPrice {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .btnCart {
+        width: 171px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0px;
+    }
+
+    /*plants lover part-----------------*/
+
     .plantsLover {
         width: 95%;
         display: flex;
