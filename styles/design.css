@@ -14,9 +14,11 @@
         "wdth" 100;
 }
 
-/*html {
+html {
     overflow-x: hidden;
-}*/
+}
+
+
 
 .width1140 {
     width: 1140px;
@@ -96,6 +98,8 @@
 
 .banner img {
     margin: 0;
+    width: 576px;
+    ;
 }
 
 /*Our Plants-------------------------------------------------------------------- */
@@ -116,8 +120,7 @@
 .para1 {
     font-size: 22px;
     font-weight: 400;
-    padding-left: 126px;
-    padding-right: 126px;
+
     margin-bottom: 50px;
 }
 
@@ -303,8 +306,7 @@
 /*form -----------------*/
 .form {
     margin-bottom: 110px;
-    margin-left: 0px;
-    ;
+    margin-left: -20px;
     background-image: url('../assets/news-letter-bg.png');
     background-color: rgba(0, 0, 0, 0.4);
     background-size: cover;
@@ -367,7 +369,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    ;
+    
 }
 
 .footerLeft img {
@@ -378,7 +380,7 @@ footer {
 .footerLeft p {
     font-size: 22px;
     font-weight: 400;
-    ;
+    
 }
 
 .bottomNav ul {
@@ -412,24 +414,30 @@ footer {
 @media screen and (max-width: 576px) {
 
     .width1140 {
-        width: 100%;
-        margin: 0 auto;
+        max-width: 100%;
+
+    }
+    .fontBlack {
+        color: black;
+
     }
 
     .title1 {
         font-size: 24px;
         margin-bottom: 16px;
+        margin-left: 16px;
     }
 
     .para1 {
         font-size: 16px;
-        padding-left: 28.5px;
-        padding-right: 28.5px;
+        margin-left: 16px;
     }
-
-   .upperNav li:not(:last-child) {
-    display: none;
-}
+    .upperNav li{
+         margin-right: 16px;
+    }
+    .upperNav li:not(:last-child) {
+        display: none;
+    }
 
     /*banner--------------*/
     .banner {
@@ -441,8 +449,10 @@ footer {
         align-items: flex-end;
         /*border: 1px solid black;*/
         margin-bottom: 110px;
+        
     }
-    .banner img{ 
+
+    .banner img {
         width: 100%;
         height: 245px;
         margin-bottom: 0px;
@@ -450,13 +460,15 @@ footer {
 
     .bannerTitle {
         font-size: 24px;
-        font-weight: 700;  
+        font-weight: 700;
+        margin-left: 16px;
     }
 
     .bannerPara {
         margin-top: 13px;
         font-size: 14px;
         font-weight: 400;
+        margin-left: 16px;
     }
 
     .banner img {
@@ -466,17 +478,18 @@ footer {
     /*Our Plants-------------------------------------------------------------------- */
     .ourPlants {
         margin-bottom: 110px;
-        width: 95%;
+        width: 100%;
     }
 
     .ourPlantsTexts {
         text-align: center;
     }
 
-
     .plantCardConatainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 15px;
         align-content: center;
     }
 
@@ -519,7 +532,7 @@ footer {
     /*plants lover part-----------------*/
 
     .plantsLover {
-        width: 95%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -539,6 +552,7 @@ footer {
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 20px;
+        margin-left: 16px;
     }
 
     .plTexts li {
@@ -648,8 +662,9 @@ footer {
 
     .form {
         margin-bottom: 110px;
-        max-width: 100%;
+        width: 100vw;
         height: 275px;
+        margin-left: -20px;
         justify-content: center;
         align-content: center;
     }
@@ -675,11 +690,17 @@ footer {
     }
 
     footer {
-        max-width: 100%;
-        padding: 0 20px;
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
+        margin-left: 20px;
+        margin-bottom: 50px;
     }
+    .footerLeft p {
+    font-size: 16px
+    
+}
+
 
     .bottomNav ul {
         display: grid;
