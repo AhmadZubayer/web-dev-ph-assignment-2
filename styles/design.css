@@ -13,9 +13,10 @@
     font-variation-settings:
         "wdth" 100;
 }
-html{
-     overflow-x: hidden;
-}
+
+/*html {
+    overflow-x: hidden;
+}*/
 
 .width1140 {
     width: 1140px;
@@ -106,13 +107,13 @@ html{
     text-align: center;
 }
 
-.ourPlantsTitle {
+.title1 {
     font-size: 65px;
     font-weight: 700;
     margin-bottom: 16px;
 }
 
-.ourPlantsPara {
+.para1 {
     font-size: 22px;
     font-weight: 400;
     padding-left: 126px;
@@ -204,6 +205,10 @@ html{
 /*discount cards*/
 .deals {
     margin-bottom: 110px;
+}
+
+.dealTexts {
+    text-align: center;
 }
 
 .dealCardContainer {
@@ -298,7 +303,8 @@ html{
 /*form -----------------*/
 .form {
     margin-bottom: 110px;
-    margin-left: 0px;;
+    margin-left: 0px;
+    ;
     background-image: url('../assets/news-letter-bg.png');
     background-color: rgba(0, 0, 0, 0.4);
     background-size: cover;
@@ -348,66 +354,245 @@ input::placeholder {
 }
 
 /*footer section----------------------*/
-footer{
+footer {
     width: 1140px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.footerLeft{
+
+.footerLeft {
     width: 360px;
     display: flex;
     flex-direction: column;
-    gap: 16px;;
+    gap: 16px;
+    ;
 }
-.footerLeft img{
+
+.footerLeft img {
     width: 135px;
     height: 84px;
 }
-.footerLeft p{
+
+.footerLeft p {
     font-size: 22px;
-    font-weight: 400;;
+    font-weight: 400;
+    ;
 }
-.bottomNav ul{
+
+.bottomNav ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
 }
-.bottomNav a{
+
+.bottomNav a {
     text-decoration: none;
     color: #898c8f;
     font-size: 16px;
     font-weight: 400;
 }
-.bottomNav li{
+
+.bottomNav li {
     list-style: none;
     margin-bottom: 30px;
 }
 
-.footerRight{
+.footerRight {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap:24px;
+    gap: 24px;
 }
 
 
 
 /* For Mobile Devices */
 @media screen and (max-width: 576px) {
-    footer {
-            max-width: 100%;
-            /* Allow it to take full width */
-            padding: 0 20px;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    
-        .bottomNav ul {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            padding: 0px;
-        }
-}
 
+    .width1140 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .title1 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .para1 {
+        font-size: 16px;
+        padding-left: 28.5px;
+        padding-right: 28.5px;
+    }
+
+    .plantsLover {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 110px;
+    }
+
+    .plTexts {
+        margin: 0 auto;
+    }
+
+    .plantsLover img {
+        width: 100%;
+    }
+
+    .plTexts h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .plTexts li {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .plImages {
+        position: relative;
+        display: inline-block;
+    }
+
+    .trustedBadge {
+        visibility: hidden;
+    }
+
+
+
+    /*discount cards*/
+    .deals {
+        margin-bottom: 110px;
+        max-width: 100%;
+        align-content: center;
+    }
+
+    .dealCardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .discCardLeft {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .discCardLeft1 {
+        width: 367px;
+        height: 200px;
+        align-content: center;
+    }
+
+    .discCardLeft1 a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 0px;
+    }
+
+    .discCardLeft1 h2 {
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .discCardLeft2 {
+        text-align: center;
+        background-image: url('../assets/deal-ana.png');
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;
+        border-radius: 10px;
+        width: 367px;
+        height: 200px;
+        align-content: center;
+    }
+
+    .discCardLeft2 a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 0px;
+    }
+
+    .discCardLeft2 h2 {
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .discCardRight {
+        width: 367px;
+        height: 200px;
+        align-content: center;
+    }
+
+    .discCardRight a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 0px;
+    }
+
+    .discCardRight h2 {
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .form {
+        margin-bottom: 110px;
+        max-width: 100%;
+        height: 275px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .formBar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formTitle {
+        font-size: 20px;
+    }
+
+    .formInput input[type="email"] {
+        width: 218px;
+    }
+
+    .btnSub {
+        font-size: 16px;
+        font-weight: 500;
+        width: 103px;
+    }
+
+    footer {
+        max-width: 100%;
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bottomNav ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+    }
+}
