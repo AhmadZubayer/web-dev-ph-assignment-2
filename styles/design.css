@@ -41,18 +41,18 @@ html{
     margin-bottom: 110px;
 }
 
-nav ul {
+.upperNav ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 48px;
 }
 
-nav ul li {
+.upperNav ul li {
     list-style: none;
 }
 
-nav li a {
+.upperNav li a {
     text-decoration: none;
     font-size: 16px;
 }
@@ -298,6 +298,7 @@ nav li a {
 /*form -----------------*/
 .form {
     margin-bottom: 110px;
+    margin-left: 0px;;
     background-image: url('../assets/news-letter-bg.png');
     background-color: rgba(0, 0, 0, 0.4);
     background-size: cover;
@@ -344,4 +345,49 @@ input::placeholder {
     line-height: normal;
     height: 50px;
     width: 186px;
+}
+
+/*footer section----------------------*/
+footer{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerLeft{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;;
+}
+.footerLeft img{
+    width: 135px;
+    height: 84px;
+}
+.footerLeft p{
+    font-size: 22px;
+    font-weight: 400;;
+}
+.bottomNav ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+.bottomNav a{
+    text-decoration: none;
+    color: #898c8f;
+    font-size: 16px;
+    font-weight: 400;
+}
+.bottomNav li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.footerRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:24px;
 }
