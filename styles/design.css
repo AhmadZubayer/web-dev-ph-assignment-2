@@ -1,0 +1,73 @@
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /*font-weight: <weight>;*/
+  font-style: normal;
+}
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  /*font-weight: <weight>;*/
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+body{
+    width: 1140px;
+    margin: 0 auto;
+}
+/*shared styles */
+.fontBlack{
+    color: black;
+}
+.fontGray{
+    color: #898c8f;
+}
+.fontOrange{
+    color: #e95a08;
+}
+.upperNav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px; 
+}
+nav ul li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.selected{
+    font-weight: 800;
+}
+
+/*banner--------------*/
+.banner{
+    height: 461px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /*border: 1px solid black;*/
+    margin-bottom: 110px;
+}
+.bannerTitle{
+    font-size: 65px;
+    font-weight: 700;
+}
+.bannerPara{
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+.banner img{
+    margin: 0;
+}
+
