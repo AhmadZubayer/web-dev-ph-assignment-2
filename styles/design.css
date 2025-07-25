@@ -79,7 +79,10 @@ nav li a{
     margin: 0;
 }
 
-/*Our Plants */
+/*Our Plants-------------------------------------------------------------------- */
+.ourPlants{
+    margin-bottom: 110px;
+}
 .ourPlantsTexts{
     text-align: center;
 }
@@ -135,4 +138,34 @@ nav li a{
     margin: 0px;
 }
 
-
+/*plants lover part-----------------*/
+.plantsLover{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+.plTexts{
+    margin-left: 90px;
+}
+.plTexts h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.plTexts li{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.plImages {
+    position: relative; 
+    display: inline-block;
+}
+.trustedBadge{
+    position: absolute;
+    top: -150px;
+    right:-120px;
+    width: 286px;
+    height: 286px;
+    z-index: 2;
+}
