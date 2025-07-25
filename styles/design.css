@@ -1,63 +1,78 @@
 .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  /*font-weight: <weight>;*/
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    /*font-weight: <weight>;*/
+    font-style: normal;
 }
+
 .noto-serif-font {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  /*font-weight: <weight>;*/
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    /*font-weight: <weight>;*/
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
-body{
+html{
+     overflow-x: hidden;
+}
+
+.width1140 {
     width: 1140px;
     margin: 0 auto;
 }
+
 /*shared styles */
-.fontBlack{
+.fontBlack {
     color: black;
 }
-.fontGray{
+
+.fontGray {
     color: #898c8f;
 }
-.fontOrange{
+
+.fontOrange {
     color: #e95a08;
 }
-.upperNav{
+
+.upperNav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 110px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 48px; 
+    gap: 48px;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     font-size: 16px;
 }
-.selected{
+
+.selected {
     font-weight: 800;
 }
-.cartBtn{
+
+.cartBtn {
     background-color: white;
     border: none;
 }
-.cartBtn a{
+
+.cartBtn a {
     text-decoration: none;
     font-size: 16px;
 }
 
 /*banner--------------*/
-.banner{
+.banner {
     height: 461px;
     width: 100%;
     display: flex;
@@ -66,44 +81,52 @@ nav li a{
     /*border: 1px solid black;*/
     margin-bottom: 110px;
 }
-.bannerTitle{
+
+.bannerTitle {
     font-size: 65px;
     font-weight: 700;
 }
-.bannerPara{
+
+.bannerPara {
     margin-top: 0;
     font-size: 22px;
     font-weight: 400;
 }
-.banner img{
+
+.banner img {
     margin: 0;
 }
 
 /*Our Plants-------------------------------------------------------------------- */
-.ourPlants{
+.ourPlants {
     margin-bottom: 110px;
 }
-.ourPlantsTexts{
+
+.ourPlantsTexts {
     text-align: center;
 }
-.ourPlantsTitle{
+
+.ourPlantsTitle {
     font-size: 65px;
     font-weight: 700;
     margin-bottom: 16px;
 }
-.ourPlantsPara{
+
+.ourPlantsPara {
     font-size: 22px;
     font-weight: 400;
     padding-left: 126px;
     padding-right: 126px;
     margin-bottom: 50px;
 }
-.plantCardConatainer{
+
+.plantCardConatainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.plantCard{
+
+.plantCard {
     display: flex;
     width: 270px;
     height: 485px;
@@ -112,19 +135,22 @@ nav li a{
     align-items: center;
     /*border: 2px solid black;*/
 }
-.plantName{
+
+.plantName {
     font-size: 22px;
-    font-weight: 500; 
-    margin: 0px; 
+    font-weight: 500;
+    margin: 0px;
 }
-.plantPrice{
+
+.plantPrice {
     font-size: 22px;
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 0px;
     text-align: center;
 }
-.btnCart{
+
+.btnCart {
     width: 270px;
     color: white;
     background-color: #e95a08;
@@ -139,117 +165,183 @@ nav li a{
 }
 
 /*plants lover part-----------------*/
-.plantsLover{
+.plantsLover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 110px;
 }
-.plTexts{
+
+.plTexts {
     margin-left: 90px;
 }
-.plTexts h2{
+
+.plTexts h2 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.plTexts li{
+
+.plTexts li {
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 20px;
 }
+
 .plImages {
-    position: relative; 
+    position: relative;
     display: inline-block;
 }
-.trustedBadge{
+
+.trustedBadge {
     position: absolute;
     top: -150px;
-    right:-120px;
+    right: -120px;
     width: 286px;
     height: 286px;
     z-index: 2;
 }
 
 /*discount cards*/
-.deals{
+.deals {
     margin-bottom: 110px;
 }
-.dealCardContainer{
+
+.dealCardContainer {
     display: flex;
     justify-content: space-between;
 }
-.discCardLeft{
+
+.discCardLeft {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.discCardLeft1{
+
+.discCardLeft1 {
     text-align: center;
     background-image: url('../assets/deal-bloom.png');
-    background-color: rgba(0, 0, 0, 0.4); 
-    background-blend-mode: multiply; 
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
     border-radius: 10px;
     width: 367px;
     height: 200px;
     align-content: center;
 }
 
-.discCardLeft1 a{
+.discCardLeft1 a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 600;
     margin-top: 0px;
 }
-.discCardLeft1 h2{
+
+.discCardLeft1 h2 {
     font-size: 20px;
     color: white;
     font-weight: 700;
     margin-bottom: 15px;
 }
-.discCardLeft2{
+
+.discCardLeft2 {
     text-align: center;
     background-image: url('../assets/deal-ana.png');
-    background-color: rgba(0, 0, 0, 0.4); 
-    background-blend-mode: multiply; 
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
     border-radius: 10px;
     width: 367px;
     height: 200px;
     align-content: center;
 }
-.discCardLeft2 a{
+
+.discCardLeft2 a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: 600;
     margin-top: 0px;
 }
-.discCardLeft2 h2{
+
+.discCardLeft2 h2 {
     font-size: 20px;
     color: white;
     font-weight: 700;
     margin-bottom: 15px;
 }
-.discCardRight{
+
+.discCardRight {
     text-align: center;
     background-image: url('../assets/deal-zabo.png');
-    background-color: rgba(0, 0, 0, 0.4); 
-    background-blend-mode: multiply; 
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
     border-radius: 10px;
     width: 753px;
     height: 425px;
     align-content: center;
 }
-.discCardRight a{
+
+.discCardRight a {
     text-decoration: none;
     color: white;
     font-size: 22px;
     font-weight: 600;
     margin-top: 0px;
 }
-.discCardRight h2{
+
+.discCardRight h2 {
     font-size: 40px;
     color: white;
     font-weight: 600;
     margin-bottom: 15px;
+}
+
+/*form -----------------*/
+.form {
+    margin-bottom: 110px;
+    background-image: url('../assets/news-letter-bg.png');
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100vw;
+    height: 533px;
+    justify-content: center;
+    align-content: center;
+}
+
+.formBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formTitle {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.formInput input[type="email"] {
+    background-color: white;
+    height: 50px;
+    width: 644px;
+    border: none;
+}
+
+input::placeholder {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.btnSub {
+    background-color: #e95a08;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 50px;
+    width: 186px;
 }
