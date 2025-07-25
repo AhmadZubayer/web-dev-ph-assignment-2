@@ -83,16 +83,56 @@ nav li a{
 .ourPlantsTexts{
     text-align: center;
 }
-.ourPlantsTexts h2{
+.ourPlantsTitle{
     font-size: 65px;
     font-weight: 700;
     margin-bottom: 16px;
 }
-.ourPlantsTexts p{
+.ourPlantsPara{
     font-size: 22px;
     font-weight: 400;
     padding-left: 126px;
     padding-right: 126px;
     margin-bottom: 50px;
 }
+.plantCardConatainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.plantCard{
+    display: flex;
+    width: 270px;
+    height: 485px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /*border: 2px solid black;*/
+}
+.plantName{
+    font-size: 22px;
+    font-weight: 500; 
+    margin: 0px; 
+}
+.plantPrice{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.btnCart{
+    width: 270px;
+    color: white;
+    background-color: #e95a08;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: stretch;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: 0px;
+}
+
 
