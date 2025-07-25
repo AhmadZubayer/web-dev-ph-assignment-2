@@ -169,3 +169,87 @@ nav li a{
     height: 286px;
     z-index: 2;
 }
+
+/*discount cards*/
+.deals{
+    margin-bottom: 110px;
+}
+.dealCardContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.discCardLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.discCardLeft1{
+    text-align: center;
+    background-image: url('../assets/deal-bloom.png');
+    background-color: rgba(0, 0, 0, 0.4); 
+    background-blend-mode: multiply; 
+    border-radius: 10px;
+    width: 367px;
+    height: 200px;
+    align-content: center;
+}
+
+.discCardLeft1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.discCardLeft1 h2{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.discCardLeft2{
+    text-align: center;
+    background-image: url('../assets/deal-ana.png');
+    background-color: rgba(0, 0, 0, 0.4); 
+    background-blend-mode: multiply; 
+    border-radius: 10px;
+    width: 367px;
+    height: 200px;
+    align-content: center;
+}
+.discCardLeft2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.discCardLeft2 h2{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.discCardRight{
+    text-align: center;
+    background-image: url('../assets/deal-zabo.png');
+    background-color: rgba(0, 0, 0, 0.4); 
+    background-blend-mode: multiply; 
+    border-radius: 10px;
+    width: 753px;
+    height: 425px;
+    align-content: center;
+}
+.discCardRight a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.discCardRight h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
